@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var num = 10;
+            alert(num);
+            alert(num.toString());      // "10"
+            alert(num.toString(2));      // "1010"
+            alert(num.toString(8));      // "12"
+            alert(num.toString(10));      // "10"
+            alert(num.toString(16));      // "a"
+
+            alert(num.toFixed(2));      // "10.00"
+            var num2 = 10.005;
+            alert(num2.toFixed(2));     // "10.01"
+
+
+            var numberObject = new Number(10);
+            var numberValue = 10;
+            alert(typeof numberObject);     // "object"
+            alert(typeof numberValue);     // "number"
+            alert(numberObject instanceof Number);      // true
+            alert(numberValue instanceof Number);      // false
+        </script>
+    </body>
+</html>

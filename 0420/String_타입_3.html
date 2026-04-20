@@ -1,0 +1,19 @@
+<!-- Concat() 보다 '+'가 더 빨리 동작 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var stringValue ="Hello World!";
+            alert(stringValue.slice(3));            //"lo World!"
+            alert(stringValue.substring(3));        //"lo World!"
+            alert(stringValue.substr(3));           //"lo World!"   이 방식은 비추
+
+            alert(stringValue.slice(3, 7));         //"lo W"      3번째부터 7번째 전까지
+            alert(stringValue.substring(3, 7));     //"lo W"
+            alert(stringValue.substr(3, 7));        //"lo Worl"   3번째부터 7글자(이 방식은 비추)
+        </script>
+    </body>
+</html>

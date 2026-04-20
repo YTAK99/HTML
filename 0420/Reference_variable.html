@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>                             
+            var obj1 = new Object();      // stack에 obj1의 객체 주소값을 할당 -> heap에 전달
+            var obj2 = obj1;              // obj1의 주소값을 2에 넣겠다
+
+            obj1.name = "Nicholas";
+            alert(obj2.name);
+
+            obj2.age = 28
+            alert(obj1.age);
+        </script>
+    </body>
+</html>
