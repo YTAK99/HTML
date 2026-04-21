@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My Title</title>
+        <script>
+            function process()
+            {
+                var obj = document.getElementById("target");
+                // 문서에서 지정한 id와 일치하는 요소를 찾아 Element 객체로 반환
+                alert(obj.value);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <input type="text" id="target" name="text1">
+            <input type="submit" value="SEND" onclick="process()">
+        </form>
+    </body>
+</html>
